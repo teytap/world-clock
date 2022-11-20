@@ -1,0 +1,53 @@
+body {
+  text-align: center;
+  font-family: "orbitron";
+}
+.location-time {
+  font-size: 108px;
+}
+.location-date {
+  font-size: 36px;
+}
+
+.header {
+  background-color: black;
+  display: block;
+  padding: 10px;
+}
+hr {
+  color: green;
+}
+.container {
+  margin: 20px 60px;
+}
+.city-clock {
+  border: 10px solid green;
+  border-radius: 40px;
+  padding: 10px 20px;
+  margin: 5px 30px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  background-color: black;
+  color: green;
+}
+
+/*
+.city-result {
+  border: 10px solid green;
+  border-radius: 40px;
+  padding: 40px 20px;
+  margin: 20px 30px;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 800;
+  background-color: black;
+  color: green;
+}
+.form {
+  margin-top: 60px;
+  padding: 40px;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}*/
