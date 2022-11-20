@@ -92,7 +92,7 @@ function showTime(response) {
         </div>`);
 }
 function getCity(city) {
-  let apiUrl = `http://worldtimeapi.org/api/timezone/${city}`;
+  let apiUrl = `https://worldtimeapi.org/api/timezone/${city}`;
   const res = axios
     .get(
       apiUrl,
