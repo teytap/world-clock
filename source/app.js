@@ -77,7 +77,7 @@ function showTime(response) {
     cityName = cityName.replace("_", " ");
   }
 
-  return (row.innerHTML += `<div class="col-3 mb-5">
+  return (row.innerHTML += `<div class="col-md-3 mb-5">
           <h4>${cityName}</h4>
           <div class="city-clock">${hours}:${minutes}</div>
           <div class="city-day">${days[response.data.day_of_week]}</div>
