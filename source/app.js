@@ -1,6 +1,4 @@
-let locationTime = document.querySelector(".location-time");
 let locationDate = document.querySelector(".location-date");
-
 let row = document.querySelector(".row");
 
 let days = [
@@ -32,29 +30,39 @@ let cities = [
   "Asia/Tokyo",
   "Europe/London",
   "Europe/Istanbul",
-  "Europe/Berlin",
   "Europe/Bucharest",
-  "Europe/Stockholm",
+  "Africa/Johannesburg",
   "Europe/Madrid",
   "Europe/Oslo",
   "Australia/Sydney",
   "Asia/Seoul",
+  "Africa/Nairobi",
 ];
 let now = new Date();
-let hours = now.getHours();
-if (hours < 10) {
-  hours = `0${hours}`;
-}
-let minutes = now.getMinutes();
-if (minutes < 10) {
-  minutes = `0${minutes}`;
-}
-let seconds = now.getSeconds();
-if (minutes < 10) {
-  seconds = `0${seconds}`;
+function display_c() {
+  var refresh = 1000; // Refresh rate in milli seconds
+  mytime = setTimeout("display_ct()", refresh);
 }
 
-locationTime.innerHTML = `${hours}:${minutes}:${seconds}`;
+function display_ct() {
+  var x = new Date();
+  var hour = x.getHours();
+  var minute = x.getMinutes();
+  var second = x.getSeconds();
+  if (hour < 10) {
+    hour = "0" + hour;
+  }
+  if (minute < 10) {
+    minute = "0" + minute;
+  }
+  if (second < 10) {
+    second = "0" + second;
+  }
+  var x1 = hour + ":" + minute + ":" + second;
+  document.getElementById("ct").innerHTML = x1;
+  display_c();
+}
+
 locationDate.innerHTML = `${days[now.getDay()]},${now.getDate()} ${
   months[now.getMonth()]
 } ${now.getFullYear()}`;

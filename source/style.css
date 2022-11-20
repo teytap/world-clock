@@ -2,11 +2,12 @@ body {
   text-align: center;
   font-family: "orbitron";
 }
-.location-time {
+
+#ct {
   font-size: 108px;
 }
 .location-date {
-  font-size: 36px;
+  font-size: 32px;
 }
 
 .header {

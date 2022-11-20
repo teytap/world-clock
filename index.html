@@ -33,17 +33,18 @@
     <link rel="stylesheet" href="/source/style.css" />
     <title>world-clock</title>
   </head>
-  <body>
+  <body onload="display_ct();">
     <div class="header">
       <hr />
     </div>
     <div class="container">
       <h1>WorldClock</h1>
-      <p>Find world wide time and date</p>
+      <p>World wide time and date</p>
       <hr />
       <div class="location-clock mb-5">
         <div class="location-city">🇹🇷 Ankara, Turkiye</div>
-        <div class="location-time">12:44:23</div>
+        <span id="ct"></span>
+
         <div class="location-date">Pazar, 20 Kasım 2022</div>
       </div>
       <hr />
